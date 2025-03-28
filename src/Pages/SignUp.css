@@ -1,0 +1,116 @@
+/* General container */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #6366f1, #a855f7, #ec4899);
+    padding: 1.5rem;
+}
+
+/* Form box */
+.signup-box {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form title */
+.signup-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-align: center;
+    color: #4f46e5;
+    margin-bottom: 1rem;
+}
+
+/* Form fields */
+.signup-field {
+    margin-bottom: 1rem;
+}
+
+.signup-label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.signup-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.signup-input:focus {
+    border-color: #4f46e5;
+    outline: none;
+}
+
+/* Error message */
+.signup-error {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+/* Password visibility toggle */
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 42px;
+    cursor: pointer;
+    color: gray;
+}
+
+/* Password strength bar */
+.password-strength {
+    width: 100%;
+    height: 5px;
+    background: #e5e7eb;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.password-strength div {
+    height: 100%;
+    border-radius: 5px;
+}
+
+.password-weak { background: red; width: 25%; }
+.password-medium { background: yellow; width: 50%; }
+.password-strong { background: blue; width: 75%; }
+.password-very-strong { background: green; width: 100%; }
+
+/* Submit button */
+.signup-button {
+    width: 100%;
+    background: #4f46e5;
+    color: white;
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 1rem;
+}
+
+.signup-button:hover {
+    background: #4338ca;
+}
+
+/* Success message */
+.success-message {
+    text-align: center;
+    color: green;
+    padding: 1rem;
+    border: 1px solid green;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
